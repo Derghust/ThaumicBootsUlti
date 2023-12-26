@@ -85,6 +85,15 @@ public class ItemElectricVoidwalkerBoots extends ItemElectricBoots implements IW
             }
 
             // speed boost
+            if (!player.onGround) {
+                float bonus = 0.200F;
+                final ItemStack sash = PlayerHandler.getPlayerBaubles(player).getStackInSlot(3);
+                if (sash != null && sash.getItem() == ItemRegistry.ItemVoidwalkerSash) {
+                    bonus *= 3.0F;
+                }
+                bonus *= stack.stackTagCompound.getDouble(TAG_MODE_SPEED);
+                player.moveFlying(0.0F, 1.0F, bonus);
+            }
             if (player.onGround || player.capabilities.isFlying) {
                 float bonus = 0.200F;
                 final ItemStack sash = PlayerHandler.getPlayerBaubles(player).getStackInSlot(3);
