@@ -6,7 +6,7 @@
   "name": "${modName}",
   "url": "https://github.com/GTNewHorizons/thaumicinsurgence",
   "description": "The latest addon for thaum 4, currently only adds the infusion interceptor",
-  "authorList": ["Alastor", "Derghust"],
+  "authorList": ["Alastor"],
   "credits": "Azanor I guess, and the Arcana Dev Team for letting us backport resources and features",
   "logoFile": ""
 }

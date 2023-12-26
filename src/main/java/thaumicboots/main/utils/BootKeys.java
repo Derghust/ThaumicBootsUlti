@@ -47,11 +47,9 @@ public class BootKeys {
     private void checkKeys() {
         if (keyJumpToggle.isPressed()) {
             toggleJump();
-        }
-        if (keySpeedToggle.isPressed()) {
+        }else if (keySpeedToggle.isPressed()) {
             toggleSpeed();
-        }
-        if (keyElementToggle.isPressed()) {
+        }else if (keyElementToggle.isPressed()) {
             toggleElementMode();
         }
     }
